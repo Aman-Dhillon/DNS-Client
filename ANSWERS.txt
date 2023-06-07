@@ -1,0 +1,447 @@
+#############################################################
+python3 adhillo_ssekar_CS455_PA1.py my-dns-client www.cnn.com
+
+
+_____________________________________________________________
+Preparing DNS Query ...
+
+DNS QUERY HEADER SECTION
+header.ID=40349
+header.QR=0
+header.OPCODE=0
+header.AA=0
+header.TC=0
+header.RD=1
+header.RA=0
+header.Z=0
+header.RCODE=0
+header.QDCOUNT=1
+header.ANCOUNT=0
+header.NSCOUNT=0
+header.ARCOUNT=0
+DNS QUERY QUESTION SECTION
+question.QNAME=www.cnn.com
+question.QTYPE=1
+question.QCLASS=1
+
+DNS QUERY HEADER IN HEX
+header.ID=0x9d9d
+header.QR=0x0
+header.OPCODE=0x0
+header.AA=0x0
+header.TC=0x0
+header.RD=0x1
+header.RA=0x0
+header.Z=0x0
+header.RCODE=0x0
+header.QDCOUNT=0x0001
+header.ANCOUNT=0x0000
+header.NSCOUNT=0x0000
+header.ARCOUNT=0x0000
+DNS QUERY QUESTION IN HEX
+question.QNAME= 03 77 77 77 03 63 6e 6e 03 63 6f 6d 00 
+question.QTYPE=0x0001
+question.QCLASS=0x0001
+
+COMPLETE DNS QUERY
+bytearray(b'\x9d\x9d\x01\x00\x00\x01\x00\x00\x00\x00\x00\x00\x03www\x03cnn\x03com\x00\x00\x01\x00\x01')
+
+Contacting DNS server...
+Sending DNS query...
+DNS Response Received (attempt 1 out of 3)
+Processing DNS Response
+
+RESPONSE
+header.ID=0x9d 0x9d
+header.QR=1
+header.OPCODE=0
+header.AA=0
+header.TC=0
+header.RD=1
+header.RA=1
+header.Z=0
+header.RCODE=0
+header.QDCOUNT=1
+header.ANCOUNT=5
+header.NSCOUNT=0
+header.ARCOUNT=0
+
+question.QNAME=www.cnn.com
+question.QTYPE=1
+question.QCLASS=1
+
+answer.NAME=3084
+answer.TYPE=5
+answer.CLASS=1
+answer.TTL=20
+answer.RDLENGTH=24
+answer.RDATA=cnn-tls.map.fastly.net
+
+answer.NAME=49193
+answer.TYPE=1
+answer.CLASS=1
+answer.TTL=24
+answer.RDLENGTH=4
+answer.RDATA=151.101.3.5        ## resolved IP address ##
+
+answer.NAME=49193
+answer.TYPE=1
+answer.CLASS=1
+answer.TTL=24
+answer.RDLENGTH=4
+answer.RDATA=151.101.67.5       ## resolved IP address ##
+
+answer.NAME=49193
+answer.TYPE=1
+answer.CLASS=1
+answer.TTL=24
+answer.RDLENGTH=4
+answer.RDATA=151.101.131.5      ## resolved IP address ##
+
+answer.NAME=49193
+answer.TYPE=1
+answer.CLASS=1
+answer.TTL=24
+answer.RDLENGTH=4
+answer.RDATA=151.101.195.5      ## resolved IP address ##
+
+_____________________________________________________________
+#############################################################
+python3 adhillo_ssekar_CS455_PA1.py my-dns-client www.gmu.edu
+
+
+_____________________________________________________________
+Preparing DNS Query ...
+
+DNS QUERY HEADER SECTION
+header.ID=9243
+header.QR=0
+header.OPCODE=0
+header.AA=0
+header.TC=0
+header.RD=1
+header.RA=0
+header.Z=0
+header.RCODE=0
+header.QDCOUNT=1
+header.ANCOUNT=0
+header.NSCOUNT=0
+header.ARCOUNT=0
+DNS QUERY QUESTION SECTION
+question.QNAME=www.gmu.edu
+question.QTYPE=1
+question.QCLASS=1
+
+DNS QUERY HEADER IN HEX
+header.ID=0x241b
+header.QR=0x0
+header.OPCODE=0x0
+header.AA=0x0
+header.TC=0x0
+header.RD=0x1
+header.RA=0x0
+header.Z=0x0
+header.RCODE=0x0
+header.QDCOUNT=0x0001
+header.ANCOUNT=0x0000
+header.NSCOUNT=0x0000
+header.ARCOUNT=0x0000
+DNS QUERY QUESTION IN HEX
+question.QNAME= 03 77 77 77 03 67 6d 75 03 65 64 75 00
+question.QTYPE=0x0001
+question.QCLASS=0x0001
+
+COMPLETE DNS QUERY
+bytearray(b'$\x1b\x01\x00\x00\x01\x00\x00\x00\x00\x00\x00\x03www\x03gmu\x03edu\x00\x00\x01\x00\x01')
+
+Contacting DNS server...
+Sending DNS query...
+DNS Response Received (attempt 1 out of 3)
+Processing DNS Response
+
+RESPONSE
+header.ID=0x24 0x1b
+header.QR=1
+header.OPCODE=0
+header.AA=0
+header.TC=0
+header.RD=1
+header.RA=1
+header.Z=0
+header.RCODE=0
+header.QDCOUNT=1
+header.ANCOUNT=1
+header.NSCOUNT=0
+header.ARCOUNT=0
+
+question.QNAME=www.gmu.edu
+question.QTYPE=1
+question.QCLASS=1
+
+answer.NAME=3084
+answer.TYPE=1
+answer.CLASS=1
+answer.TTL=3211
+answer.RDLENGTH=4
+answer.RDATA=192.124.249.68     ## resolved IP address ##
+
+_____________________________________________________________
+#############################################################
+python3 adhillo_ssekar_CS455_PA1.py my-dns-client vt.edu
+
+
+_____________________________________________________________
+Preparing DNS Query ...
+
+DNS QUERY HEADER SECTION
+header.ID=20998
+header.QR=0
+header.OPCODE=0
+header.AA=0
+header.TC=0
+header.RD=1
+header.RA=0
+header.Z=0
+header.RCODE=0
+header.QDCOUNT=1
+header.ANCOUNT=0
+header.NSCOUNT=0
+header.ARCOUNT=0
+DNS QUERY QUESTION SECTION
+question.QNAME=vt.edu
+question.QTYPE=1
+question.QCLASS=1
+
+DNS QUERY HEADER IN HEX
+header.ID=0x5206
+header.QR=0x0
+header.OPCODE=0x0
+header.AA=0x0
+header.TC=0x0
+header.RD=0x1
+header.RA=0x0
+header.Z=0x0
+header.RCODE=0x0
+header.QDCOUNT=0x0001
+header.ANCOUNT=0x0000
+header.NSCOUNT=0x0000
+header.ARCOUNT=0x0000
+DNS QUERY QUESTION IN HEX
+question.QNAME= 02 76 74 03 65 64 75 00 
+question.QTYPE=0x0001
+question.QCLASS=0x0001
+
+COMPLETE DNS QUERY
+bytearray(b'R\x06\x01\x00\x00\x01\x00\x00\x00\x00\x00\x00\x02vt\x03edu\x00\x00\x01\x00\x01')
+
+Contacting DNS server...
+Sending DNS query...
+DNS Response Received (attempt 1 out of 3)
+Processing DNS Response
+
+RESPONSE
+header.ID=0x52 0x6
+header.QR=1
+header.OPCODE=0
+header.AA=0
+header.TC=0
+header.RD=1
+header.RA=1
+header.Z=0
+header.RCODE=0
+header.QDCOUNT=1
+header.ANCOUNT=1
+header.NSCOUNT=0
+header.ARCOUNT=0
+
+question.QNAME=vt.edu
+question.QTYPE=1
+question.QCLASS=1
+
+answer.NAME=3084
+answer.TYPE=1
+answer.CLASS=1
+answer.TTL=600
+answer.RDLENGTH=4
+answer.RDATA=198.82.215.14      ## resolved IP address ##
+
+_____________________________________________________________
+#############################################################
+python3 adhillo_ssekar_CS455_PA1.py my-dns-client youtube.com
+
+
+_____________________________________________________________
+Preparing DNS Query ...
+
+DNS QUERY HEADER SECTION
+header.ID=5914
+header.QR=0
+header.OPCODE=0
+header.AA=0
+header.TC=0
+header.RD=1
+header.RA=0
+header.Z=0
+header.RCODE=0
+header.QDCOUNT=1
+header.ANCOUNT=0
+header.NSCOUNT=0
+header.ARCOUNT=0
+DNS QUERY QUESTION SECTION
+question.QNAME=youtube.com
+question.QTYPE=1
+question.QCLASS=1
+
+DNS QUERY HEADER IN HEX
+header.ID=0x171a
+header.QR=0x0
+header.OPCODE=0x0
+header.AA=0x0
+header.TC=0x0
+header.RD=0x1
+header.RA=0x0
+header.Z=0x0
+header.RCODE=0x0
+header.QDCOUNT=0x0001
+header.ANCOUNT=0x0000
+header.NSCOUNT=0x0000
+header.ARCOUNT=0x0000
+DNS QUERY QUESTION IN HEX
+question.QNAME= 07 79 6f 75 74 75 62 65 03 63 6f 6d 00 
+question.QTYPE=0x0001
+question.QCLASS=0x0001
+
+COMPLETE DNS QUERY
+bytearray(b'\x17\x1a\x01\x00\x00\x01\x00\x00\x00\x00\x00\x00\x07youtube\x03com\x00\x00\x01\x00\x01')
+
+Contacting DNS server...
+Sending DNS query...
+DNS Response Received (attempt 1 out of 3)
+Processing DNS Response
+
+RESPONSE
+header.ID=0x17 0x1a
+header.QR=1
+header.OPCODE=0
+header.AA=0
+header.TC=0
+header.RD=1
+header.RA=1
+header.Z=0
+header.RCODE=0
+header.QDCOUNT=1
+header.ANCOUNT=4
+header.NSCOUNT=0
+header.ARCOUNT=0
+
+question.QNAME=youtube.com
+question.QTYPE=1
+question.QCLASS=1
+
+answer.NAME=3084
+answer.TYPE=1
+answer.CLASS=1
+answer.TTL=300
+answer.RDLENGTH=4
+answer.RDATA=172.253.115.91     ## resolved IP address ##
+
+answer.NAME=3084
+answer.TYPE=1
+answer.CLASS=1
+answer.TTL=300
+answer.RDLENGTH=4
+answer.RDATA=172.253.115.190    ## resolved IP address ##
+
+answer.NAME=3084
+answer.TYPE=1
+answer.CLASS=1
+answer.TTL=300
+answer.RDLENGTH=4
+answer.RDATA=172.253.115.136    ## resolved IP address ##
+
+answer.NAME=3084
+answer.TYPE=1
+answer.CLASS=1
+answer.TTL=300
+answer.RDLENGTH=4
+answer.RDATA=172.253.115.93     ## resolved IP address ##
+
+_____________________________________________________________
+#############################################################
+python3 adhillo_ssekar_CS455_PA1.py my-dns-client www.example.com
+
+
+_____________________________________________________________
+Preparing DNS Query ...
+
+DNS QUERY HEADER SECTION
+header.ID=22473
+header.QR=0
+header.OPCODE=0
+header.AA=0
+header.TC=0
+header.RD=1
+header.RA=0
+header.Z=0
+header.RCODE=0
+header.QDCOUNT=1
+header.ANCOUNT=0
+header.NSCOUNT=0
+header.ARCOUNT=0
+DNS QUERY QUESTION SECTION
+question.QNAME=www.example.com
+question.QTYPE=1
+question.QCLASS=1
+
+DNS QUERY HEADER IN HEX
+header.ID=0x57c9
+header.QR=0x0
+header.OPCODE=0x0
+header.AA=0x0
+header.TC=0x0
+header.RD=0x1
+header.RA=0x0
+header.Z=0x0
+header.RCODE=0x0
+header.QDCOUNT=0x0001
+header.ANCOUNT=0x0000
+header.NSCOUNT=0x0000
+header.ARCOUNT=0x0000
+DNS QUERY QUESTION IN HEX
+question.QNAME= 03 77 77 77 07 65 78 61 6d 70 6c 65 03 63 6f 6d 00 
+question.QTYPE=0x0001
+question.QCLASS=0x0001
+
+COMPLETE DNS QUERY
+bytearray(b'W\xc9\x01\x00\x00\x01\x00\x00\x00\x00\x00\x00\x03www\x07example\x03com\x00\x00\x01\x00\x01')
+
+Contacting DNS server...
+Sending DNS query...
+DNS Response Received (attempt 1 out of 3)
+Processing DNS Response
+
+RESPONSE
+header.ID=0x57 0xc9
+header.QR=1
+header.OPCODE=0
+header.AA=0
+header.TC=0
+header.RD=1
+header.RA=1
+header.Z=0
+header.RCODE=0
+header.QDCOUNT=1
+header.ANCOUNT=1
+header.NSCOUNT=0
+header.ARCOUNT=0
+
+question.QNAME=www.example.com
+question.QTYPE=1
+question.QCLASS=1
+
+answer.NAME=3084
+answer.TYPE=1
+answer.CLASS=1
+answer.TTL=10374
+answer.RDLENGTH=4
+answer.RDATA=93.184.216.34      ## resolved IP address ##
